@@ -1,0 +1,11 @@
+json.id job.id
+json.company_id job.company_id
+json.job_title job.job_title
+json.job_description job.job_description
+json.job_url job.job_url
+json.job_type job.job_type
+json.job_yrs_exp job.job_yrs_exp
+json.job_location job.job_location
+json.job_salary_range job.job_salary_range
+json.created_at job.created_at
+json.updated_at job.updated_at

@@ -8,10 +8,7 @@ one:
   job_type: MyString
   job_yrs_exp: MyString
   job_location: MyString
-  job_active: MyString
   job_salary_range: MyString
-  job_note: MyText
-  job_task: MyText
 
 two:
   company_id: 1
@@ -21,7 +18,4 @@ two:
   job_type: MyString
   job_yrs_exp: MyString
   job_location: MyString
-  job_active: MyString
   job_salary_range: MyString
-  job_note: MyText
-  job_task: MyText

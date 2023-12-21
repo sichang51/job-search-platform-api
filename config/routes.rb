@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   get "/companies/:id" => "companies#show"
   patch "/companies/:id" => "companies#update"
   delete "/companies/:id" => "companies#destroy"
+
+  # Job Routes
+  get "/jobs" => "jobs#index"
 end
