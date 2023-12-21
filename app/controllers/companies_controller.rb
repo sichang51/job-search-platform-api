@@ -18,4 +18,15 @@ class CompaniesController < ApplicationController
     @company = Company.find_by(id: params[:id])
     render :show
   end
+
+  def update
+    @company = Company.find_by(id: params[:id])
+    @company.update(
+      co_name: params[:co_name] || @company.co_name,
+      co_logo: params[:co_logo] || @company.co_logo,
+      co_location: params[:co_location] || @company.co_location,
+      co_description: params[:co_description] || @company.co_description,
+    )
+    render :show
+  end
 end
