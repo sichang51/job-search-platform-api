@@ -15,4 +15,12 @@ class CompaniesControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+
+  test "show" do
+    get "/companies/#{Company.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["id", "co_name", "co_logo", "co_location", "co_description", "created_at", "updated_at"], data.keys
+  end
 end

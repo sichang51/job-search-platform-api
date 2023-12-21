@@ -13,4 +13,9 @@ class CompaniesController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @company = Company.find_by(id: params[:id])
+    render :show
+  end
 end
