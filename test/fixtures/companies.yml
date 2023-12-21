@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_name: MyString
+  co_logo: MyString
+  co_location: MyString
+  co_description: MyString
+
+two:
+  co_name: MyString
+  co_logo: MyString
+  co_location: MyString
+  co_description: MyString
