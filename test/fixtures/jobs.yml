@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_id: 1
+  job_title: MyString
+  job_description: MyText
+  job_url: MyString
+  job_type: MyString
+  job_yrs_exp: MyString
+  job_location: MyString
+  job_active: MyString
+  job_salary_range: MyString
+  job_note: MyText
+  job_task: MyText
+
+two:
+  company_id: 1
+  job_title: MyString
+  job_description: MyText
+  job_url: MyString
+  job_type: MyString
+  job_yrs_exp: MyString
+  job_location: MyString
+  job_active: MyString
+  job_salary_range: MyString
+  job_note: MyText
+  job_task: MyText
