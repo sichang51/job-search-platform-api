@@ -15,4 +15,12 @@ class JobsControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+
+  test "show" do
+    get "/jobs/#{Job.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["id", "company_id", "job_title", "job_description", "job_url", "job_type", "job_yrs_exp", "job_location", "job_salary_range", "created_at", "updated_at"], data.keys
+  end
 end
