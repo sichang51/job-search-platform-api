@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post "/companies" => "companies#create"
   get "/companies/:id" => "companies#show"
   patch "/companies/:id" => "companies#update"
+  delete "/companies/:id" => "companies#destroy"
 end

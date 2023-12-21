@@ -29,4 +29,10 @@ class CompaniesController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @company = Company.find_by(id: params[:id])
+    @company.destroy
+    render json: { message: "Company destroyed successfully" }
+  end
 end

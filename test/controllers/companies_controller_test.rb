@@ -32,4 +32,11 @@ class CompaniesControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal "Updated name", data["co_name"]
   end
+
+  test "destroy" do
+    assert_difference "Company.count", -1 do
+      delete "/companies/#{Company.first.id}.json"
+      assert_response 200
+    end
+  end
 end
