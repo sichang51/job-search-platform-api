@@ -5,9 +5,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(
+    user = User.create(
       user_name: params[:user_name],
       user_email: params[:user_email],
+      password: params[:password],
       user_phn_num: params[:user_phn_num],
       user_bio: params[:user_bio],
       user_linkedin_url: params[:user_linkedin_url],
@@ -17,7 +18,11 @@ class UsersController < ApplicationController
       user_github_url: params[:user_github_url],
       user_photo_url: params[:user_photo_url],
     )
-    render :show
+    if user.save
+      render json: { message: "User created successfully" }, status: :created
+    else
+      render json: { errors: user.errors.full_messages }, status: :bad_request
+    end
   end
 
   def show
