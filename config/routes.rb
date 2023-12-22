@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   get "/jobs/:id" => "jobs#show"
   patch "/jobs/:id" => "jobs#update"
   delete "/jobs/:id" => "jobs#destroy"
+
+  # User Routes
+  get "/users" => "users#index"
 end
