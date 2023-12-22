@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   # User Routes
   get "/users" => "users#index"
+  post "/users" => "users#create"
 end

@@ -8,4 +8,15 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal User.count, data.length
   end
+
+  test "create" do
+    assert_difference "User.count", 1 do
+      post "/users.json", params: {
+                            user_name: "Test",
+                            user_email: "test@test.com",
+                            password: "password",
+                          }
+      assert_response 200
+    end
+  end
 end
