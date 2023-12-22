@@ -36,4 +36,10 @@ class JobsController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @job = Job.find_by(id: params[:id])
+    @job.destroy
+    render json: { message: "Job destroyed successfully" }
+  end
 end
