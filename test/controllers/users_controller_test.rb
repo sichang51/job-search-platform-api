@@ -39,7 +39,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
 
   test "destroy" do
     assert_difference "User.count", -1 do
-      delete "/jobs/#{User.first.id}.json"
+      delete "/users/#{User.first.id}.json"
       assert_response 200
     end
   end
