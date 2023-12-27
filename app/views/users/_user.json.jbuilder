@@ -12,5 +12,5 @@ json.user_website_url user.user_website_url
 json.user_resume_url user.user_resume_url
 json.user_github_url user.user_github_url
 json.user_photo_url user.user_photo_url
-json_user_fname user.user_fname
-json_user_lname user.user_lname
+json.user_fname user.user_fname
+json.user_lname user.user_lname

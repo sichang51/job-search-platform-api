@@ -13,6 +13,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_difference "User.count", 1 do
       post "/users.json", params: {
                             user_name: "Test",
+                            user_fname: "Test",
+                            user_lname: "Test",
                             user_email: "test@test.com",
                             password: "password",
                           }
