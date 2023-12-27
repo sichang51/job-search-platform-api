@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_22_004927) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_27_010046) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,6 +50,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_22_004927) do
     t.string "user_resume_url"
     t.string "user_github_url"
     t.string "user_photo_url"
+    t.string "user_fname"
+    t.string "user_lname"
   end
 
 end
