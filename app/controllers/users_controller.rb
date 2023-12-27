@@ -7,6 +7,8 @@ class UsersController < ApplicationController
   def create
     user = User.create(
       user_name: params[:user_name],
+      user_fname: params[:user_fname],
+      user_lname: params[:user_lname],
       user_email: params[:user_email],
       password: params[:password],
       user_phn_num: params[:user_phn_num],
@@ -34,6 +36,8 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     @user.update(
       user_name: params[:user_name] || @user.user_name,
+      user_fname: params[:user_fname] || @user.user_fname,
+      user_lname: params[:user_lname] || @user.user_lname,
       user_email: params[:user_email] || @user.user_email,
       user_phn_num: params[:user_phn_num] || @user.user_phn_num,
       user_bio: params[:user_bio] || @user.user_bio,
