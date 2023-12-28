@@ -1,5 +1,6 @@
 json.id job.id
 json.company_id job.company_id
+json.company job.company
 json.job_title job.job_title
 json.job_description job.job_description
 json.job_url job.job_url
