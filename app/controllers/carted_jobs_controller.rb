@@ -1,0 +1,2 @@
+class CartedJobsController < ApplicationController
+end
