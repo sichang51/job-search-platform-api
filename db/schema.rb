@@ -15,11 +15,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_28_170436) do
   enable_extension "plpgsql"
 
   create_table "carted_jobs", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "cartedjobs", force: :cascade do |t|
     t.integer "user_id"
     t.integer "company_id"
     t.integer "job_id"
