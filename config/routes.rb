@@ -22,4 +22,9 @@ Rails.application.routes.draw do
 
   # Session Routes
   post "/sessions" => "sessions#create"
+
+  # Carted Jobs
+  get "/carted_jobs" => "carted_jobs#index"
+  post "/carted_jobs" => "carted_jobs#create"
+  delete "/carted_jobs/:id" => "carted_jobs#destroy"
 end
