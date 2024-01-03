@@ -8,8 +8,7 @@ class CartedJobsController < ApplicationController
     @carted_job = CartedJob.create(
       user_id: current_user.id,
       company_id: params[:company_id],
-      status: "carted",
-      job_id: nil,
+      job_id: params[:job_id],
     )
 
     if @carted_job.valid?

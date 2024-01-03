@@ -53,7 +53,5 @@ class UsersController < ApplicationController
     render json: { message: "User destroyed successfuly" }
   end
 
-  def show_current_user
-    render json: current_user
-  end
+
 end

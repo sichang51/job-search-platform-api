@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get "/users/:id" => "users#show"
   patch "/users/:id" => "users#update"
   delete "/users/:id" => "users#destroy"
+  get "/current_user" => "users#show_current_user"
 
   # Session Routes
   post "/sessions" => "sessions#create"
