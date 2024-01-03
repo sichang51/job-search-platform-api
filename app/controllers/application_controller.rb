@@ -24,4 +24,27 @@ class ApplicationController < ActionController::Base
       render json: {}, status: :unauthorized
     end
   end
+
+  def get_auth_token
+    auth_headers = request.headers["Authorization"]
+    if auth_headers.present? && auth_headers[/(?<=\A(Bearer ))\S+\z/]
+      token = auth_headers[/(?<=\A(Bearer ))\S+\z/]
+      begin
+        decoded_token = JWT.decode(
+          token,
+          Rails.application.credentials.fetch(:secret_key_base),
+          true,
+          { algorithm: "HS256" }
+        )
+        decoded_token[0]["user_id"]
+      rescue JWT::ExpiredSignature
+        nil
+      end
+    end
+  end
+
+  def fetch_auth_token
+    auth_token = get_auth_token
+    render json: { auth_token: auth_token }
+  end
 end

@@ -19,8 +19,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: params[:id])
+    @user = User.find(params[:id])
+    # @user = User.find_by(id: params[:id])
     render :show
+  end
+
+  def show_current_user
+    render json: current_user
   end
 
   def update
@@ -46,5 +51,9 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     @user.destroy
     render json: { message: "User destroyed successfuly" }
+  end
+
+  def show_current_user
+    render json: current_user
   end
 end
