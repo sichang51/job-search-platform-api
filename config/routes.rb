@@ -26,6 +26,7 @@ Rails.application.routes.draw do
 
   # Carted Jobs
   get "/carted_jobs" => "carted_jobs#index"
+  get "/carted_jobs/:id" => "carted_jobs#user_index"
   post "/carted_jobs" => "carted_jobs#create"
   delete "/carted_jobs/:id" => "carted_jobs#destroy"
 end

@@ -1,6 +1,8 @@
 class CartedJobsController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show]
+
   def index
-    @carted_jobs = current_user.carted_jobs.where(status: "carted")
+    @carted_job = current_user.carted_jobs
     render :index
   end
 
@@ -19,7 +21,7 @@ class CartedJobsController < ApplicationController
   end
 
   def destroy
-    carted_job = current_user.carted_jobs.find_by(id: params[:id], status: "carted")
+    carted_job = current_user.carted_jobs.find_by(id: params[:id])
     carted_job.update(status: "removed")
     render json: { status: "Carted item removed" }
   end

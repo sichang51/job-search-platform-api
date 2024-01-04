@@ -25,7 +25,8 @@ class UsersController < ApplicationController
   end
 
   def show_current_user
-    render json: current_user
+    @user = current_user
+    render :show
   end
 
   def update
@@ -53,5 +54,10 @@ class UsersController < ApplicationController
     render json: { message: "User destroyed successfuly" }
   end
 
+  def saved_jobs
+    @user = User.find(params[:id])
+    @saved_jobs = @user.saved_jobs # Assuming you have a relationship set up
 
+    render json: @saved_jobs
+  end
 end
