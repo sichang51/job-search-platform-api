@@ -7,11 +7,19 @@ class CartedJobsController < ApplicationController
   end
 
   def create
-    @carted_job = CartedJob.create(
+    @carted_job = CartedJob.find_by(
       user_id: current_user.id,
       company_id: params[:company_id],
       job_id: params[:job_id],
     )
+
+    if !@carted_job
+      @carted_job = CartedJob.create(
+        user_id: current_user.id,
+        company_id: params[:company_id],
+        job_id: params[:job_id],
+      )
+    end
 
     if @carted_job.valid?
       render :show
@@ -22,7 +30,7 @@ class CartedJobsController < ApplicationController
 
   def destroy
     carted_job = current_user.carted_jobs.find_by(id: params[:id])
-    carted_job.update(status: "removed")
+    carted_job.delete
     render json: { status: "Carted item removed" }
   end
 end
