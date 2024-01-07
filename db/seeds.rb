@@ -18,28 +18,70 @@
 
 # Job.create(company_id: 3, job_title: "Frontend Web Engineeer", job_description: "We are seeking a talented Web Developer to join our team and play a crucial role in building the next generation of intelligent airport systems. As a Web Developer, you will be responsible for designing, developing, and maintaining the web-based components of HALO. Collaborating closely with our software engineers and cross-functional teams, you will contribute to creating an exceptional user experience for clients across the aviation industry. ", job_url: "https://www.apple.com", job_type: "Part-Time", job_yrs_exp: "2 - 4 years", job_location: "Los Angeles, CA", job_salary_range: "$85,000 - $98,000")
 
-User.create(
-  user_name: "testsimon",
-  user_email: "simon@test.com",
-  user_phn_num: "555-555-5555",
-  user_bio: "Several years in sales analytics, currently working at...",
-  user_linkedin_url: "https://www.linkedin.com/test",
-  user_twitter_handle: "@toobusy",
-  user_website_url: "https://www.profile.com",
-  user_resume_url: "https://www.resumetest.com",
-  user_github_url: "https://www.githubtest.com",
-  user_photo_url: "https://www.phototest.com",
-)
+# User.create(
+#   user_name: "testsimon",
+#   user_email: "simon@test.com",
+#   user_phn_num: "555-555-5555",
+#   user_bio: "Several years in sales analytics, currently working at...",
+#   user_linkedin_url: "https://www.linkedin.com/test",
+#   user_twitter_handle: "@toobusy",
+#   user_website_url: "https://www.profile.com",
+#   user_resume_url: "https://www.resumetest.com",
+#   user_github_url: "https://www.githubtest.com",
+#   user_photo_url: "https://www.phototest.com",
+# )
 
-User.create(
-  user_name: "chucknorris",
-  user_email: "chuck@test.com",
-  user_phn_num: "111-111-1111",
-  user_bio: "All arrays Chuck Norris declares are of infinite size, because Chuck Norris knows no bounds.  Chuck Norris finished World of Warcraft.",
-  user_linkedin_url: "https://www.linkedin.com/testchuck",
-  user_twitter_handle: "@destroyerofworlds",
-  user_website_url: "https://www.profile.com/chuck",
-  user_resume_url: "https://www.resumetest.com/chuck",
-  user_github_url: "https://www.githubtest.com/chuck",
-  user_photo_url: "https://www.phototest.com/chuck",
-)
+# User.create(
+#   user_name: "chucknorris",
+#   user_email: "chuck@test.com",
+#   user_phn_num: "111-111-1111",
+#   user_bio: "All arrays Chuck Norris declares are of infinite size, because Chuck Norris knows no bounds.  Chuck Norris finished World of Warcraft.",
+#   user_linkedin_url: "https://www.linkedin.com/testchuck",
+#   user_twitter_handle: "@destroyerofworlds",
+#   user_website_url: "https://www.profile.com/chuck",
+#   user_resume_url: "https://www.resumetest.com/chuck",
+#   user_github_url: "https://www.githubtest.com/chuck",
+#   user_photo_url: "https://www.phototest.com/chuck",
+# )
+
+# Company.create(co_name: "SpaceX", co_logo: "https://download.logo.wine/logo/SpaceX/SpaceX-Logo.wine.png", co_location: "Hawthorne, CA", co_description: "Space Exploration Technologies Corp. commonly referred to as SpaceX, is an American spacecraft manufacturer, launch service provider, defense contractor and satellite communications company headquartered in Hawthorne, California.")
+
+# Company.create(co_name: "DCI Solutions", co_logo: "https://www.dci-solutions.com/wp-content/uploads/2019/06/image001_400x357.png", co_location: "Hanover, MD", co_description: "DCI Solutions is a Small Business based in Maryand that focuses on providing engineering and program management consulting services to numerous government agencies. Our services are tailored to the needs of our specific government clients and their missions. DCI has extensive technical domain knowledge in intelligence, surveillance, and reconnaissance (ISR), command and control (C2), healthcare systems, high performance computing, and cyber warfare. DCI also provides its clients with critical program acquisition and planning support to enable them to operate effectively and efficiently in an austere funding environment.")
+
+# Company.create(co_name: "Zynex Medical", co_logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Zynex_Medical_Tranparent_Background.png/1200px-Zynex_Medical_Tranparent_Background.png", co_location: "Englewood, CO", co_description: "DCI Solutions is a Small Business based in Maryand that focuses on providing engineering and program management consulting services to numerous government agencies. Our services are tailored to the needs of our specific government clients and their missions. DCI has extensive technical domain knowledge in intelligence, surveillance, and reconnaissance (ISR), command and control (C2), healthcare systems, high performance computing, and cyber warfare. DCI also provides its clients with critical program acquisition and planning support to enable them to operate effectively and efficiently in an austere funding environment.")
+
+# Company.create(co_name: "Simpson Strong-Tie", co_logo: "https://www.strongtie.com/_ui/images/sst-logo.png", co_location: "Jacksonville Beach, FL", co_description: "For over 60 years, Simpson Strong-Tie has focused on creating structural products that help people build safer and stronger homes and buildings. Considered a leader in structural systems research, testing and innovation, Simpson Strong-Tie works closely with industry professionals to provide code-listed, field-tested products and value-engineered solutions. Its structural products are recognized for helping structures resist high winds, hurricanes and seismic forces. The company’s extensive product offering includes engineered structural connectors, fasteners, fastening systems, lateral-force resisting systems, anchors and products that repair, protect and strengthen concrete.")
+
+# Company.create(co_name: "Deloitte", co_logo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Deloitte_Logo.png", co_location: "Mechanicsburg, PA", co_description: "We’re a leading professional services firm, but what makes working at Deloitte unique? When you join us, you become connected. To inspiring people. To meaningful work with fascinating clients. To learning that happens every day, and progress that never stops. From Tax, Audit, Accountancy and Consulting, to Real Estate, Technology, Legal and Cyber; we’re changing the business and technology landscape. Join us, and connect with possibility. Make an impact that matters.")
+
+# Job.create(company_id: 4, job_title: "Software Engineer, Combustion Modeling (Raptor)", job_description: "The goal of the SpaceX combustion modeling development team is to develop first-in-class combustion simulation software that can optimize and significantly reduce the development time of the Raptor rocket engine. Work with brilliant, passionate engineers, software developers, and analysts to develop unprecedented simulation capabilities that support the rapid design of the most cutting-edge rocket engines in the world. We have no shortage of hard problems and challenges.", job_url: "https://www.spacex.com/careers", job_type: "Full-Time", job_yrs_exp: "5 - 7 years", job_location: "Hawthorne, CA", job_salary_range: "$120,000 - $145,000")
+
+# Job.create(company_id: 5, job_title: "Software Engineer", job_description: "Serve as a Software Engineer and collaborate with teams to translate operational requirements into the following.  Participate in planning, coordinating, scheduling, and directing engineering activities.  Develop and execute of software and system test strategies.  Participate in contractor software development activities, by supporting team members in agile development paradigm activities, developing software acceptance criteria, generating recommendations to the government Assistant Product Manager, recommend development, planning, and testing.", job_url: "https://www.dci-solutions.com", job_type: "Full-Time", job_yrs_exp: "3 - 8 years", job_location: "Hanover, MD", job_salary_range: "$160,000 - $250,000")
+
+# Job.create(company_id: 6, job_title: "Backend and Cloud Software Developer", job_description: "The Backend and Cloud Software Developer is responsible for working with Hemodynamics and Oximetry teams to develop the common backend interconnectivity and interoperability systems. This role will work with the software development team to implement backend technologies for data transmission across connected devices for various functions.", job_url: "https://www.zynex.com/careers", job_type: "Full-Time", job_yrs_exp: "5+ years", job_location: "Englewood, CO", job_salary_range: "$100,000 - $130,000")
+
+# Job.create(company_id: 7, job_title: "Software Developer in Test", job_description: "Simpson Strong-Tie is a leader in engineered structural connectors, software, and solutions for the building industry. We maintain a reputation as a trusted manufacturer, partner, and corporate citizen committed to our customers and employees.
+
+# Our founder, Barc Simpson established 9 Principles of Business we live out as company values and have made Simpson Strong-Tie an inspiring place to work since 1956. Our team of talented people are dedicated to our shared mission: to provide solutions that help people design and build safer, stronger structures.
+
+# Learn about our company culture directly from our team.", job_url: "https://strongtie.wd1.myworkdayjobs.com/External", job_type: "Full-Time", job_yrs_exp: "3+ years", job_location: "Remote", job_salary_range: "$69,400 - $90,200")
+
+# Job.create(company_id: 8, job_title: ".Net Developer", job_description: "Design, develop and modify software systems and custom components using modern dev stack.  Develop software solutions by analyzing system performance standards, confer with users or system engineers.  Analyze systems flow, data usage and work processes; and investigate problem areas.  Integrate existing software into new or modified systems.  Develop and execute test procedures for software components.  Analyze user requirements to derive technical software design and performance requirements.  Plan, track, manage deliverables on short term sprints, and long-term software deployments", job_url: "https://www2.deloitte.com/us/en/careers/careers.html?icid=top_careers", job_type: "Full-Time", job_yrs_exp: "3+ years", job_location: "Mechanicsburg, PA", job_salary_range: "$97,000 - $123,000")
+
+# Job.create(company_id: 1, job_title: "Software Engineer (Full Stack)", job_description: "We’re looking for Software engineers to shape our first product offerings in this critical space. As an experienced software engineer, you’ll drive the rapid execution of our products and services, addressing the needs of our consumers and service providers. Collaborate with a global team of data scientists, software engineers, machine learning experts, and product managers to create a best-in-class service that captures hearts and minds.", job_url: "https://jobs.careers.microsoft.com/global/en/job/1670406/Software-Engineer-(Full-Stack)", job_type: "Full-Time", job_yrs_exp: "2+ years", job_location: "Vancouver, British Columbia, Canada", job_salary_range: "$79,600 - $153,000")
+
+# Job.create(company_id: 1, job_title: "Software Engineer II", job_description: "As a Software Engineer II, you will help deliver innovative solutions to address the automation needs to scale our delivery capabilities. We are looking for an individual contributor to deliver automation capabilities that power the long-range execution planning efforts, drive workflow improvements and build solutions to assist in the delivery of large-scale data centers through efficient management of cost and schedule. If you want to work with a knowledgeable team of engineers and program managers from various disciplines, if working on a V1 product/release and related projects excite you and if you want to build the foundation of the cloud delivery experience, look no further. If you are interested in being part of the delivery of engineering solutions enabling Microsoft’s cloud infrastructure, this is for you.", job_url: "https://jobs.careers.microsoft.com/global/en/job/1675386/Software-Engineer-II", job_type: "Full-Time", job_yrs_exp: "2+ years", job_location: "Multiple Locations, United States", job_salary_range: "$94,300 - $182,600")
+
+# Job.create(company_id: 3, job_title: "Database Engineer", job_description: "Become a significant member of the HWTE Core Infrastructure team at the center of Apple's Factory Development Process. We develop software delivery systems and build the supporting systems infrastructure to support global manufacturing lines. We are looking for a Database Engineer proficient in building, recreating and maintaining various application environments. Ideal candidate will be a systems engineer at their core, with a deep interest and passion for automation and database technologies.", job_url: "https://jobs.apple.com/en-us/details/200528924/database-engineer?team=SFTWR", job_type: "Full-Time", job_yrs_exp: "5+ years", job_location: "Austin, TX", job_salary_range: "$110,300 - $205,000")
+
+# Job.create(company_id: 3, job_title: "Compiler Frontend Engineer", job_description: "The Clang and Swift compilers are at the core of Apple's developer tools and Xcode IDE, used internally to build Apple's software stack and externally by millions of developers. We are looking for a compiler software engineer to develop and enhance the Clang compiler, and advance the interoperability between C++ and Swift languages. Your work will directly improve the development experience for millions of developers across the world. The work done by Apple’s compiler and languages teams often gets showcased at Apple’s WWDC event and presented at conferences such as LLVM Developer Meeting. We value communication skills, integrity and creativity, and aspire to build diverse, balanced and dynamic teams.", job_url: "https://jobs.apple.com/en-us/details/200531386/compiler-frontend-engineer?team=SFTWR", job_type: "Full-Time", job_yrs_exp: "5+ years", job_location: "Austin, TX", job_salary_range: "$138,900 - $256,500")
+
+# Job.create(company_id: 3, job_title: "Backend Software Engineer - Sports", job_description: "Are you interested in building products used by more than a billion people? What happens when the world’s most innovative engineers collaborate with the world’s most creative storytellers? TV gets reinvented. In the TV App Services Teams at Apple, we work every day to create products that enrich people’s lives. Meet the re-inventors: The Apple TV Services teams built and manage the Apple TV app as well as tvOS, which redefined and refined the way people watch sports, and so much more. Today, these teams also handle one exciting realm at Apple: They bring viewers the sport experience to access NBA, NFL, MLB and many more games. To deliver Apple-level quality on a global scale, these engineers employ talent and tools to efficiently ingest, process and display sports data. They also integrate at the OS level to build the best user experiences with the Siri ecosystem. This group is seeking a highly skilled Back End Engineer to help design, develop, and deliver new experiences for our customers. Join the team to see what else is possible!", job_url: "https://jobs.apple.com/en-us/details/200530285/backend-software-engineer-sports?team=SFTWR", job_type: "Full-Time", job_yrs_exp: "3+ years", job_location: "New York, NY", job_salary_range: "$138,900 - $208,300")
+
+# Job.create(company_id: 2, job_title: "Software Development Engineer, SDE, Blueshift", job_description: "You will work directly with business owners, research scientists, other software development teams, and owners of major AWS services. This role requires an individual with excellent analytical abilities, deep knowledge of software engineering principles, as well as a passion for problem-solving. Ideally, you are comfortable with ambiguity and accessing and working with data from multiple sources.", job_url: "https://www.amazon.jobs/en-gb/jobs/2512838/software-development-engineer-sde-blueshift", job_type: "Full-Time", job_yrs_exp: "3+ years", job_location: "Seattle, WA", job_salary_range: "$115,000 - $223,600")
+
+# Job.create(company_id: 2, job_title: "Jr. Software Development Engineer", job_description: "Amazon is looking for a highly-motivated Jr. Software Development Engineer (SDE)! Jr. SDEs write real software and collaborate with experienced software engineers who provide guidance and opportunities for ownership on projects that matter to our customers. As a year-round intern, Jr. SDEs become fully integrated into their teams and regularly contribute to impactful deliverables. Your design and code will contribute to solving some of Amazon's most complex technical challenges.", job_url: "https://www.amazon.jobs/en-gb/jobs/2530695/jr-software-development-engineer", job_type: "Full-Time", job_yrs_exp: "1+ years", job_location: "Arlington, VA", job_salary_range: "$79,500 - $115,600")
+
+# Job.create(company_id: 2, job_title: "Front End Engineer, API Gateway DX", job_description: "We are looking to grow our API Gateway console development team to help design and deliver new customer facing features for our HTTP APIs product and migrate our REST APIs product to the HTTP APIs platform. We acknowledge that there's room for improvement in our customer experience so we're looking for engineers who are customer obsessed. Being customer obsessed will ensure we're delivering a user interface that exceed our customers expectations. We have a modern React JS based code base that leverages AWS component based design system. For this role in specific, our ideal candidate has a deep understanding of browser technology along with ReactJS, Redux, CSS and HTML. Which will enable them to help set the technical direction for our front end solutions.", job_url: "https://www.amazon.jobs/en-gb/jobs/2522005/front-end-engineer-api-gateway-dx", job_type: "Full-Time", job_yrs_exp: "2+ years", job_location: "Sunnyvale, CA", job_salary_range: "$115,000 - $223,600")
+
+# Job.create(company_id: 3, job_title: "Sr. Front End Web Developer", job_description: "The autonomous systems team is in search of a curious and innovative teammate who is passionate about using groundbreaking web technology to deliver experiences that surpass user expectations. The team works on many impactful web applications and services at Apple where quality and performance cannot be sacrificed. Join Apple and help us leave the world better than we found it!", job_url: "https://jobs.apple.com/en-us/details/200447445/sr-front-end-web-developer?team=SFTWR", job_type: "Full-Time", job_yrs_exp: "7+ years", job_location: "Cupertino, CA", job_salary_range: "$138,000 - $256,500")
