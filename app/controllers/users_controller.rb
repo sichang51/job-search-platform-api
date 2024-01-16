@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  require "cloudinary"
+
   def index
     @users = User.all
     render :index
@@ -30,6 +32,14 @@ class UsersController < ApplicationController
   end
 
   def update
+    Rails.logger.debug("Received params: #{params.inspect}")
+    user_photo_url = params[:user_photo_url]
+
+    if params[:image_file]
+      response = Cloudinary::Uploader.upload(params["image_file"], resource_type: :auto)
+      user_photo_url = response["secure_url"]
+    end
+
     @user = User.find_by(id: params[:id])
     @user.update(
       user_name: params[:user_name] || @user.user_name,
@@ -43,7 +53,8 @@ class UsersController < ApplicationController
       user_website_url: params[:user_website_url] || @user.user_website_url,
       user_resume_url: params[:user_resume_url] || @user.user_resume_url,
       user_github_url: params[:user_github_url] || @user.user_github_url,
-      user_photo_url: params[:user_photo_url] || @user.user_photo_url,
+      # user_photo_url: params[:user_photo_url] || @user.user_photo_url,
+      user_photo_url: user_photo_url || @user.user_photo_url,
     )
     render :show
   end
