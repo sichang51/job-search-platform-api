@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     Rails.logger.debug("Received params: #{params.inspect}")
     user_photo_url = params[:user_photo_url]
 
-    if params[:image_file]
+    if params[:image_file] && params[:image_file] != "null"
       response = Cloudinary::Uploader.upload(params["image_file"], resource_type: :auto)
       user_photo_url = response["secure_url"]
     end
@@ -57,6 +57,10 @@ class UsersController < ApplicationController
       user_photo_url: user_photo_url || @user.user_photo_url,
     )
     render :show
+    # rescue StandardError => e
+    #   Rails.logger.error("Error updating user: #{e.message}")
+    #   Rails.logger.error("Backtrace: #{e.backtrace.join("\n")}")
+    #   render json: { error: "Internal Server Error" }, status: :internal_server_error
   end
 
   def destroy
