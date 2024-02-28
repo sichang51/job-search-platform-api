@@ -2,7 +2,7 @@ require "test_helper"
 
 class JobsControllerTest < ActionDispatch::IntegrationTest
   test "index" do
-    get "/jobs.jsonb"
+    get "/jobs.json"
     assert_response 200
 
     data = JSON.parse(response.body)
